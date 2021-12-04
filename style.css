@@ -1,0 +1,22 @@
+header{
+  height: 7vh
+}
+
+.hero-img{
+  background-image: url(https://images.unsplash.com/photo-1634987020184-c36b8b053ad5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80);
+  height:064vh;
+  background-position: center
+}
+.goner{
+ display: none;
+}
+
+.object-fit-contain{
+  object-fit:cover
+}
+
+@media (min-width: 1000px) {
+  .goner{
+    display: block;
+   }
+}
