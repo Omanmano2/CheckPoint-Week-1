@@ -15,7 +15,7 @@ header{
   object-fit:cover
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 768px) {
   .goner{
     display: block;
    }
@@ -23,13 +23,12 @@ header{
 
 .spill{
   bottom: -48px;
+  display: block;
 }
 
-@media (min-width:768){
+@media (max-width: 769px) {
   .spill{
-    bottom: -48px;
-  position: relative;
-}
+    bottom: 0;
 }
 
 .borderstyle{
@@ -38,12 +37,3 @@ header{
   border-radius: 5px;
 }
 
-.middlebox{
-  height: 325px;
-  width: 350px;
-}
-
-.sideboxes{
-  height: 275px;
-  width: 275px;
-}
