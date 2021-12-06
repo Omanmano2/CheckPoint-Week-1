@@ -1,18 +1,18 @@
 header{
-  height: 7vh
+  height: 7vh;
 }
 
 .hero-img{
   background-image: url(https://images.unsplash.com/photo-1634987020184-c36b8b053ad5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80);
   height:50vh;
-  background-position: center
+  background-position: center;
 }
 .goner{
  display: none;
 }
 
 .object-fit-contain{
-  object-fit:cover
+  object-fit:cover;
 }
 
 @media (min-width: 768px) {
@@ -29,11 +29,12 @@ header{
 @media (max-width: 769px) {
   .spill{
     bottom: 0;
+  }
 }
 
-.borderstyle{
-  border: 1px solid black;
-  box-sizing: border-box;
-  border-radius: 5px;
+.text{
+  font-size: small;
 }
-
+.customFont{
+font-family: 'Bebas Neue', cursive;
+}
