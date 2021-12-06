@@ -38,3 +38,20 @@ header{
 .customFont{
 font-family: 'Bebas Neue', cursive;
 }
+
+.swip{
+  order: 2;
+}
+
+.swap{
+  order: 1;
+}
+
+@media (min-width:768px){
+  .swip{
+    order: 1;
+  }
+  .swap{
+    order: 2;
+  }
+}
