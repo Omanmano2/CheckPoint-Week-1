@@ -20,6 +20,7 @@
 
 </head>
 
+<!--Debug Style.css-->
 <style>
   /* This is for wire framing to see our rows/columns */
   body.debug .container,
@@ -50,39 +51,47 @@
     crossorigin="anonymous"></script>
 
   <!-- This Code Nneeds to be replaced by a sticky nav bar-->
-  <header class="container-fluid bg-info flex-direction">
-    <nav class="navbar navbar-light">
-      <div class="container-fluid ">
-        <span class="navbar-brand mb-0 h1 ">Navbar</span>
+  <header">
+    <nav class="navbar navbar-dark bg-info">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold fs-2" href="#">
+          <i class="bi bi-controller"></i>
+          GAMER BAY
+          <i class="bi bi-badge-4k"></i>
+        </a>
       </div>
     </nav>
   </header>
 
   <main>
+
+    <!-- This section heading displays the form box and text over image-->
     <section class="container-fluid">
 
-      <div class="row hero-img">
-        <div class="col-md-5 px-5 pb-4 text-white">
-          <div class="mb-3">
+      <div class="row hero-img d-flex">
+        <div class="col-md-5 px-5 pb-4 text-dark p-3">
+         <div class="bg-white p-3">
+          <div>
             <label for="exampleFormControlInput1" class="form-label">Name</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
           </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Email</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+          <div>
+          <label for="exampleFormControlTextarea1" class="form-label">Email</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
           </div>
-          <div class="mb-3">
+          <div>
             <label for="exampleFormControlTextarea1" class="form-label">Phone</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
           </div>
-          <div class="mb-3">
+          <div>
             <label for="exampleFormControlTextarea1" class="form-label">Ext</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
           </div>
-          <div class="mb-3">
+          <div>
             <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
           </div>
+         </div>
         </div>
         <div class="pt-5 px-5 col-5 text-white goner">
           <h2>TEXT OVER AN IMAGE</h2>
@@ -91,35 +100,82 @@
       </div>
     </section>
 
+    <!-- This container displays a card that spills out of row only on medium and larger screen sizes-->
     <section class="container-fluid">
-      <div class="row">
-        <div class="col-md-4">
+      <div class="row bg-info justify-content-center justify-content-evenly .flex-column p-5 position-relative">
+        <div class="col-md-5">
+            <div> 
+              <h2 >Lorem.</h2>
+              <p class="lh-base ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda commodi repellat explicabo rem esse hic velit tempora, maiores ipsa quo eligendi. Fuga commodi beatae quo accusamus ipsam assumenda dolores animi!</p>
+            </div>
+          </div>
+          <div class="col-md-5 bg-white spill">
+            <div class="lh-lg">
+              <div>Lorem ipsum dolor sit amet.</div>
+              <div>Lorem ipsum dolor sit amet.</div>
+              <div>Lorem ipsum dolor sit amet.</div>
+              <div>Lorem ipsum dolor sit amet.</div>
+              <div>Lorem ipsum dolor sit amet.</div>
+            </div>
+          </div>
+        </div>
+    </section>  
+
+    <!-- Third container w/ embedded video + text-->
+    <section class="container-fluid">
+      <div class="row justify-content-center justify-content-evenly d-flex pt-5">
+        <div class="col-md-5 mb-5 mt-5 d-flex">
           <img
             src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-            alt="boof" class="img-fluid">
+            alt="boof" class="img-fluid border border-info">
         </div>
-        <div class="co-md-4">
+        <div class="col-md-5 mb-5 mt-5 d-flex">
           <div>
-            <p></p>
+            <p>Lorem ipsum dolor sit amet.</p>
           </div>
         </div>
       </div>
     </section>
 
+    <!--This container displays three evenly spaced columns with the middle col being larger-->
+    <!--The columns are reordered when the screen becomes less than 768px-->
+    <section class="container-fluid">
+      <div class="row p-5 justify-content-center justify-content-evenly align-item-center .flex-column">
+        <div class="col-md-4 p-3 h-50">
+          <p class="text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, illo laborum nam fugit ratione unde modi? Esse ipsam dolor et.
+          </p>
+        </div>
+        <div class="col-md-4 p-3 .order-sm-1">
+          <div class="text-center"> 
+            <i class="bi bi-joystick"></i>
+            <i class="bi bi-joystick"></i>
+            <i class="bi bi-joystick"></i>
+          </div>
+          <p class="text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, illo laborum nam fugit ratione unde modi? Esse ipsam dolor et.
+          </p>
+        </div>
+        <div class="col-md-4 p-3 h-50 .order-sm-3">
+          <p class="text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, illo laborum nam fugit ratione unde modi? Esse ipsam dolor et.
+          </p>
+        </div>
+      </div>
+    </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <!-- Last container with flex column and a BOLD heading -->
+  <section class="container-fluid">
+    <div class="row">
+      <div class="col-6">
+        <h1>Lorem, ipsum dolor.</h1>
+      </div>
+      <div>
+        <p>lorem</p>
+      </div>
+    </div>
+  </section>
+  
   </main>
 
 
